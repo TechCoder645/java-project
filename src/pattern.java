@@ -67,8 +67,95 @@ public class pattern {
 //           System.out.println();
 //      }
 
-        //pyramid pattern
+//        //pyramid pattern
+//
+//        int n=5;
+//        for(int row=1; row<=n; row++){
+//            // for each row -> variable colums
+//            // space
+//            for(int  col=1; col<=n-row; col++){
+//                System.out.print(" ");
+//            }
+//            // stars
+//            for(int col=1; col<=2*row-1; col++){
+//                System.out.print(" *");
+//            }
+//            // move next line
+//            System.out.println();
+//            }
+
+//        // inverted pyramid
+//        int n=4;
+//        for (int row=1; row<=n; row++) {
+//            // for each row -> variable colums
+//            // space
+//            for (int col = 1; col <= row - 1; col++) {
+//                System.out.print(" ");
+//            }
+//            // stars
+//            for (int col = 1; col <= 2*n - 2*row + 1; col++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
 
 
+//        // holow rectange
+//        int n = 4;
+//
+//        for (int row = 1; row <= n; row++) {
+//
+//            // for each row -> 6 columns
+//            for (int col = 1; col <= 6; col++) {
+//
+//                if (row == 1 || row == n) {
+//                    System.out.print("* ");
+//                } else {
+//
+//                    // middle row
+//                    if (col == 1) {
+//                        System.out.print("* ");
+//                    } else if (col == 6) {
+//                        System.out.print("* ");
+//                    } else {
+//                        // middle column
+//                        System.out.print("  ");
+//                    }
+//                }
+//            }
+//
+//            // move to next row
+//            System.out.println();
+//        }
+
+        // hollow right angle triangle
+        int n = 5;
+
+        for (int row = 1; row <= n; row++) {
+
+            if (row == 1 || row == n) {
+
+                for (int col = 1; col <= row; col++) {
+                    System.out.print("* ");
+                }
+
+            } else {
+
+                // First star
+                System.out.print("* ");
+
+                // Middle spaces
+                for (int col = 1; col <= row - 2; col++) {
+                    System.out.print("  ");
+                }
+
+                // Last star
+                System.out.print("* ");
+            }
+
+            // Move to next row
+            System.out.println();
+        }
+
+        }
     }
-}
