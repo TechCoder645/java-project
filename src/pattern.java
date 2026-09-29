@@ -128,34 +128,77 @@ public class pattern {
 //            System.out.println();
 //        }
 
-        // hollow right angle triangle
-        int n = 5;
+//        // hollow right angle triangle
+//        int n = 5;
+//
+//        for (int row = 1; row <= n; row++) {
+//
+//            if (row == 1 || row == n) {
+//
+//                for (int col = 1; col <= row; col++) {
+//                    System.out.print("* ");
+//                }
+//
+//            } else {
+//
+//                // First star
+//                System.out.print("* ");
+//
+//                // Middle spaces
+//                for (int col = 1; col <= row - 2; col++) {
+//                    System.out.print("  ");
+//                }
+//
+//                // Last star
+//                System.out.print("* ");
+//            }
+//
+//            // Move to next row
+//            System.out.println();
+//        }
 
-        for (int row = 1; row <= n; row++) {
+//        // triangle using numeric value
+//        int n=5;
+//        for(int row=1; row<=n; row++){
+//            for(int col=1; col<=row; col++){
+//                System.out.print(col+"");
+//            }
+//            System.out.println();
+//        }
+//
+//        int n=5;
+//        int count=1;
+//        for(int row=1; row<=n; row++){
+//            for(int col=1; col<=row; col++){
+//                System.out.print(count+" ");
+//                count++;
+//            }
+//            System.out.println();
+//        }
+        // output
+//        1
+//        2 3
+//        4 5 6
+//        7 8 9 10
+//        11 12 13 14 15
 
-            if (row == 1 || row == n) {
-
-                for (int col = 1; col <= row; col++) {
-                    System.out.print("* ");
-                }
-
-            } else {
-
-                // First star
-                System.out.print("* ");
-
-                // Middle spaces
-                for (int col = 1; col <= row - 2; col++) {
-                    System.out.print("  ");
-                }
-
-                // Last star
-                System.out.print("* ");
+        // triangle chacter pattern
+        int n=5;
+        char ch='A';
+        for(int row=1; row<=n; row++){
+            for(int col=1; col<=row; col++){
+                System.out.print(ch+" ");
+                ch++;
             }
-
-            // Move to next row
             System.out.println();
         }
+        // output4
 
-        }
+//        A
+//        B C
+//        D E F
+//        G H I J
+//        K L M N O
+
+    }
     }
