@@ -1,11 +1,11 @@
 package AbstractDesign;
 // This is old method
-//// it  is abstract concept
+// it  is abstract concept
 //abstract class Bird {
 //    abstract  void fly();
 //    abstract void eat();
 //}
-//// it is implementation of abstract
+// it is implementation of abstract
 //class Sparrow extends Bird{
 //    @Override
 //    void fly(){
