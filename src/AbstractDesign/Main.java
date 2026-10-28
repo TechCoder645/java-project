@@ -29,21 +29,21 @@ package AbstractDesign;
 
     // this is new method
 // it  is abstract concept
-abstract class Bird {
-    abstract  void fly();
-    abstract void eat();
+    // interface
+interface Bird{
+    void fly();
+    void eat();
 }
 // it is implementation of abstract
-class Sparrow extends Bird{
+class Sparrow implements Bird{
+  @Override
+    public void fly(){
+      System.out.println("Sparrow flying");
+  }
     @Override
-    void fly(){
-        System.out.println("Sparrow flying");
-    }
-    @Override
-    void eat(){
+    public void eat(){
         System.out.println("Sparrow eating");
     }
-
 }
 
 public class Main {
